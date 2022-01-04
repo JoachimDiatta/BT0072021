@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css" media="screen" type="text/css" />
+
+    <title>enregistrement</title>
+</head>
+
+<body>
+    <div id="container">
+   
+
+<center>
+    <h2>Formulaire d'enregistrement </h2>
+    <form method="post" action="ajout_a_bd.php">
+        <p><i> Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+        <fieldset>
+            <legend>Inscription</legend>
+            <label for="nom">Prenom <em>*</em></label><br>
+            <input name ="prenom" id="prenom" placeholder="Joachim" autofocus="" required=""><br>
+
+            <label for="nom">Nom <em>*</em></label><br>
+            <input name ="nom" id="nom" placeholder="Diatta" autofocus="" required=""><br>
+
+            <label  for="datenaisse">Date de Naissance <em>*</em></label><br>
+            <input type="date" name="datenaisse" required=""><br>
+
+            <label for="email">Email <em>*</em></label><br>
+            <input name="email" id="email" type="email" placeholder="prenom.nom@bootcamp.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@bootcamp.com"><br>
+
+            <label for="telephone">Portable</label><br>
+            
+
+            <input name="telephone" id="telephone" type="tel" placeholder="221xxxxxxx"><br>
+            
+
+            <label for="nom">Mot de passe <em>*</em></label><br>
+          <input type="password" name ="passwrd" id="passwrd" placeholder="password" autofocus="" required=""><br>
+        
+            <label for="sexe">Civilité</label><br>
+            <select  name="civi">
+        <option value="choix" >Choix</option>
+        <option value="femme" >Femme</option>
+        <option value="Homme" >Homme</option>
+      </select><br>
+      </fieldset>
+
+        <p><input type="submit" name="valider" value="Soummettre"></p>
+    </form>
+    </center>
+</div>
+</body>
+
+</html>
